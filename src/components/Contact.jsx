@@ -70,11 +70,6 @@ const Contact = () => {
             setErrorMsg(false)
           }, 3000);
 
-          // setForm({
-          //   name: "",
-          //   email: "",
-          //   message: "",
-          // });
         }
       );
   };
@@ -132,26 +127,25 @@ const Contact = () => {
 
       <button
         type='submit'
-        className={`${
-          errorMsg ? 'bg-red-600' : ''
-        } ${
-          successMsg ? 'bg-green-700' : ''
-        } bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl`}
+        className='outline-none w-fit text-white font-bold shadow-md shadow-primary'
       >
         {!errorMsg ? 
           (loading ? 
-            <span disabled>
+            <span className='py-3 px-8 rounded-xl bg-tertiary' disabled>
               <Spinner />
               Sending ...
             </span> 
-          : !successMsg ? 'Send Message' 
-          : <span className='flex gap-2 justify-center items-center'>
-              <IoCheckmarkCircle size={30} className='hidden md:block'/>
+          : !successMsg ? 
+            <span className='py-3 px-8 rounded-xl bg-tertiary'>
+              Send Message
+              </span> 
+          : <span className='flex gap-2 justify-center items-center py-3 px-8  bg-green-700 rounded-xl'>
+              <IoCheckmarkCircle size={25} className='hidden md:block'/>
               Success! Your message has been sent successfully.
             </span>
           ) 
-          : <span className='flex gap-2 justify-center items-center'>
-              <IoMdAlert size={30} className='hidden md:block'/>
+          : <span className='flex gap-2 justify-center items-center w-fit py-3 px-8  bg-red-500 rounded-xl'>
+              <IoMdAlert size={25} className='hidden md:block'/>
               Oops! something went wrong.
             </span>
         }
