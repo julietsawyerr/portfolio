@@ -25,7 +25,7 @@ const Works = () => {
           whileInView="show" 
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px] md:text-[18px]'
           >
-            Following projects showcases my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos in it. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.
+            Here you can explore some of my personal and client projects that I have developed. Each project is described briefly and includes links to code repositories and live demos in it. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.
           </motion.p>
       </div>
 

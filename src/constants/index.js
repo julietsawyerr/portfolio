@@ -114,7 +114,7 @@ const projects = [
   {
     name: "Evogym",
     description:
-      "A simple fitness web application for training and fitness Classes  ideal for all fitness enthusiasts. Designed with Next.js, TypeScript and Tailwind css.",
+      "A simple fitness web application for training and fitness Classes  ideal for all fitness enthusiasts. Created with Next.js, TypeScript and Tailwind css.",
       link: 'https://evogymfitness.vercel.app/',
     tags: [
       {
